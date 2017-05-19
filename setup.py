@@ -2,7 +2,7 @@ from distutils.core import setup
 from distutils.extension import Extension
 import os
 
-if not os.path.isfile("mmh3object.c"):
+if os.path.isfile("mmh3object.c"):
 
     setup(
         ext_modules=[
