@@ -2,7 +2,7 @@ PWD=$(pwd)
 
 clean:
 	python setup.py clean
-	rm -rf *.so *.o *.html mmh3object.c
+	rm -rf *.so *.o *.html mmh3object.cpp
 
 build: clean
 	# gcc -c MurmurHash3.cpp
