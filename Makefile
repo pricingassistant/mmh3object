@@ -8,7 +8,7 @@ build: clean
 	# gcc -c MurmurHash3.cpp
 	# gcc -shared -o libMurmurHash3.so MurmurHash3.o
 	# python setup.py build_ext --inplace -v
-	venv/bin/cython -a mmh3object.pyx -I.
+	venv/bin/cython --cplus -a mmh3object.pyx -I.
 	python setup.py build
 	cp build/lib*/*.so ./
 
